@@ -1,9 +1,9 @@
 6. ZigZag Conversion
 ---
 
-Total Accepted: 106535
-Total Submissions: 423252
-Difficulty: Easy
+- Total Accepted: 106535
+- Total Submissions: 423252
+- Difficulty: Easy
 
 
 Problem
