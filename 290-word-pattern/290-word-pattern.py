@@ -1,6 +1,3 @@
-# solution reference:
-#
-
 class Solution(object):
     def wordPattern(self, pattern, s):
         """
