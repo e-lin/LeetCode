@@ -1,0 +1,13 @@
+100. Same Tree
+---
+
+- Total Accepted: 154457
+- Total Submissions: 347506
+- Difficulty: Easy
+
+
+Problem
+---
+Given two binary trees, write a function to check if they are equal or not.
+
+Two binary trees are considered equal if they are structurally identical and the nodes have the same value.
