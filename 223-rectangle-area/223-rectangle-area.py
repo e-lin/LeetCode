@@ -17,9 +17,13 @@ class Solution(object):
         if C < E or D < F or G < A or H < B:
             cover = 0
         else:
-            X = sorted([A,C,E,G])
-            Y = sorted([B,D,F,H])
-            cover = (X[2] - X[1]) * (Y[2] - Y[1])
+            x1 = max(A, E)
+            y1 = max(E, F)
+            x2 = min(C, G)
+            y2 = min(D, H)
+            d1 = x2 - x1
+            d2 = y2 - y1
+            cover = d1 * d2
 
         return (C-A)*(D-B) + (G-E)*(H-F) - cover
 
