@@ -18,3 +18,8 @@ Given _nums1_ = `[1, 2, 2, 1]`, _nums2_ = `[2, 2]`, return `[2]`.
 
 - Each element in the result must be unique.
 - The result can be in any order.
+
+
+Related Challenges
+---
+`350. Intersection of Two Arrays II`.
