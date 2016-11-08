@@ -1,6 +1,3 @@
-# Solution Reference:
-# http://bookshadow.com/weblog/2016/06/30/leetcode-sum-of-two-integers/
-# https://www.hrwhisper.me/leetcode-sum-two-integers/
 
 class Solution(object):
     def getSum(self, a, b):
@@ -9,12 +6,16 @@ class Solution(object):
         :type b: int
         :rtype: int
         """
-        MAX_INT = 0x7FFFFFFF
-        MIN_INT = 0x80000000
-        MASK = 0x100000000
+
+        MAX_INT = 0x7FFFFFFF # 32 bits integer max
+        MIN_INT = 0x80000000 # 32 bits integer min
+        MASK = 0xFFFFFFFF # mask to get last 32 bits
+
         while b:
-            a, b = (a ^ b) % MASK, ((a & b) << 1) % MASK
-        return a if a <= MAX_INT else ~((a % MIN_INT) ^ MAX_INT)
+            a, b = (a ^ b) & MASK, ((a & b) << 1) & MASK
+        # if a is negative, get a's 32 bits complement positive first,
+        # then get 32-bit positive's Python complement negative.
+        return a if a <= MAX_INT else ~(a ^ MASK)
 
 
 def main():

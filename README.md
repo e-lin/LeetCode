@@ -7,7 +7,8 @@ Solution Analysis
 ---
 **Easy:**
 
-- x.
+- [371. Sum of Two Integers][R5]
+- [438. Find All Anagrams in a String][R6]
 
 **Medium:**
 
@@ -26,3 +27,5 @@ Further Reading
 [R2]: http://www.1point3acres.com/why-you-fail-in-job-interviews/
 [R3]: http://www.diycode.cc/topics/220
 [R4]: https://ask.julyedu.com/question/775
+[R5]: https://github.com/e-lin/LeetCode/blob/master/371-sum-of-two-integers/s-371-sum-of-two-integers.md
+[R6]:
