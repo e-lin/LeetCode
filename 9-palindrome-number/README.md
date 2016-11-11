@@ -51,5 +51,13 @@ You could also try reversing an integer. However, if you have solved the problem
 There is a more generic way of solving this problem.
 
 
+Related Challenges
+---
+- `5. Longest Palindromic Substring`
+- `409. Longest Palindrome`
+- `125. Valid Palindrome`
+- `234. Palindrome Linked List`
+- `131. Palindrome Partitioning` (M)
+
 
 [R1]: http://stackoverflow.com/questions/8270092/python-remove-all-whitespace-in-a-string

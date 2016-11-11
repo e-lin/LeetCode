@@ -30,6 +30,11 @@ Explanation:
 One longest palindrome that can be built is "dccaccd", whose length is 7.
 ```
 
+
 Related Challenges
 ---
-`5. Longest Palindromic Substring`.
+- `5. Longest Palindromic Substring`
+- `9. Palindrome Number`
+- `125. Valid Palindrome`
+- `234. Palindrome Linked List`
+- `131. Palindrome Partitioning` (M)
