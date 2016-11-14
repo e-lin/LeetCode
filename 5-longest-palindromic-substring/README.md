@@ -13,4 +13,8 @@ Given a string `S`, find the longest palindromic substring in `S`. You may assum
 
 Related Challenges
 ---
-`409. Longest Palindrome`.
+- `9. Palindrome Number`
+- `409. Longest Palindrome`
+- `125. Valid Palindrome`
+- `234. Palindrome Linked List`
+- `131. Palindrome Partitioning` (M)
