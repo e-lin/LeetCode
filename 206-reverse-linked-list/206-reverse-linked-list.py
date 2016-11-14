@@ -1,3 +1,6 @@
+# Solution Reference:
+# http://alrightchiu.github.io/SecondRound/linked-list-xin-zeng-zi-liao-shan-chu-zi-liao-fan-zhuan.html#reverse
+
 # Definition for singly-linked list.
 class ListNode(object):
     def __init__(self, x):
@@ -10,24 +13,24 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        lst = []
-        ptr = head
+        if head is None:
+            return None
+        if head.next is None:
+            return head
 
-        while ptr is not None:
-            lst.append(ptr.val)
-            ptr = ptr.next
+        previous = None
+        current = head
+        preceding = head.next
 
-        # print lst
-        lst = lst[::-1]
+        while preceding:
+            current.next = previous
+            previous = current
+            current = preceding
+            preceding = preceding.next
 
-        rlst = ListNode(0) # dummy head
-        rptr = rlst
-
-        for i in lst:
-            rptr.next = ListNode(i)
-            rptr = rptr.next
-
-        return rlst.next
+        current.next = previous #inverse the last node
+        head = current
+        return head
 
 
 def printListNode(head):
