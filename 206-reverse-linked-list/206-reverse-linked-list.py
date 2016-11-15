@@ -8,6 +8,7 @@ class ListNode(object):
         self.next = None
 
 class Solution(object):
+    # Solution 1:
     def reverseList(self, head):
         """
         :type head: ListNode
@@ -31,6 +32,27 @@ class Solution(object):
         current.next = previous #inverse the last node
         head = current
         return head
+
+    # Solution 2:
+    def reverseList(self, head):
+        previous = None
+        while head:
+            current = head
+            head = head.next
+            current.next = previous #inverse
+            previous = current
+        return previous
+
+    # Solution 3:
+    def reverseList(self, head):
+        return self._reverse(head)
+
+    def _reverse(self, node, prev = None):
+        if node is None:
+            return prev
+        curr = node.next
+        node.next = prev
+        return self._reverse(curr, node)
 
 
 def printListNode(head):
