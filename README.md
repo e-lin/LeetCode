@@ -30,4 +30,4 @@ Further Reading
 [R4]: https://ask.julyedu.com/question/775
 [R5]: https://github.com/e-lin/LeetCode/blob/master/371-sum-of-two-integers/s-371-sum-of-two-integers.md
 [R6]: https://github.com/e-lin/LeetCode/blob/master/206-reverse-linked-list/s-206-reverse-linked-list.md
-[R7]:
+[R7]: https://github.com/e-lin/LeetCode/blob/master/438-find-all-anagrams-in-a-string/s-438-find-all-anagrams-in-a-string.md
