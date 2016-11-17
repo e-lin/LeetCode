@@ -38,6 +38,23 @@ At the final stage, the `current` will be the last node. But we need to reverse 
 Refresh the **head** to `current`.
 
 
+Another Way to Implement (I think I will stick to this way.)
+---
+
+``` python
+def reverseList(self, head):
+    prev = None
+    curr = head
+    while curr:
+        temp = curr.next
+        curr.next = prev
+        prev = curr
+        curr = temp
+    return prev
+```
+We use `temp` pointer to remember the `curr.next`.
+
+
 Use only 2 Pointers
 ---
 If we only have `previous` and `current` pointers.
