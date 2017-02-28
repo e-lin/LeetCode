@@ -1,6 +1,8 @@
 # solution reference:
 # https://segmentfault.com/a/1190000006697526
 
+import mynotebook as m
+
 class Solution(object):
     def twoSum(self, nums, target):
         for idx, val in enumerate(nums):
@@ -23,6 +25,7 @@ def main():
     result = solution.twoSum(nums, target)
 
     print result
+    print m.foo()
 
 
 if __name__ == '__main__':

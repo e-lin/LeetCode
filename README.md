@@ -10,6 +10,13 @@ Solution Analysis
 - [371. Sum of Two Integers][R5]
 - [206. Reverse Linked List][R6]
 - [438. Find All Anagrams in a String][R7]
+- 100. Same Tree
+- 101. Symmetric Tree
+- 226. Invert Binary Tree
+- 9. Palindrome Number
+- 125-valid-palindrome
+- 409-longest-palindrome
+
 
 **Medium:**
 

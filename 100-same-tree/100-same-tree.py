@@ -25,6 +25,27 @@ class Solution(object):
         else:
             return False
 
+    def isSameTree(self, p, q):
+        """
+        :type p: TreeNode
+        :type q: TreeNode
+        :rtype: bool
+        """
+        ptmp = p
+        qtmp = q
+        while ptmp:
+            if ptmp.val != qtmp.val:
+                return False
+            ptmp = ptmp.left
+            qtmp = qtmp.left
+
+        while p:
+            print p.val, q.val
+            if p.val != q.val:
+                return False
+            p = p.right
+            q = q.right
+        return True
 
 
 def printTree(root):
@@ -42,10 +63,12 @@ def printTree(root):
 def main():
     t1 = TreeNode(1)
     t1.left = TreeNode(2)
+    t1.left.left = TreeNode(3)
     # printTree(t1)
 
     t2 = TreeNode(1)
-    t2.left = TreeNode(None)
+    t2.left = TreeNode(2)
+    t2.left.left = TreeNode(3)
     t2.right = TreeNode(2)
     # printTree(t2)
 
