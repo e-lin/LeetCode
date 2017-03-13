@@ -50,7 +50,7 @@ Now `b` is `0`, we are done, so return `a`. This algorithm works in general, not
 
 All the masks are doing is ensuring that the value is an integer.
 
-Since the maximum possible `int` (32 bits) is 2147483647(memorize it with hex `0xFFFFFFF`). So, if you add 2 to this value, without using mask, you will just get
+Since the maximum possible `int` (32 bits) is 2147483647(memorize it with hex `0x0FFFFFFF`). So, if you add 2 to this value, without using mask, you will just get
 
 ```
 print get_sum(2147483647, 2)
@@ -112,8 +112,11 @@ Reference
 - [Sum of Two Integers without using “+” operator in python][R1]
 - [Python solution with no "+-*/%", completely bit manipulation guaranteed][R2]
 - [A 3-lines python solution][R3]
-
+- [資料型別 Wiki][R4]
+- [二補數 Wiki][R5]
 
 [R1]: http://stackoverflow.com/questions/38557464/sum-of-two-integers-without-using-operator-in-python
 [R2]: https://discuss.leetcode.com/topic/51999/python-solution-with-no-completely-bit-manipulation-guaranteed
 [R3]: https://discuss.leetcode.com/topic/58037/a-3-lines-python-solution
+[R4]: https://zh.wikipedia.org/wiki/%E8%B3%87%E6%96%99%E9%A1%9E%E5%9E%8B
+[R5]: https://zh.wikipedia.org/wiki/%E4%BA%8C%E8%A3%9C%E6%95%B8
