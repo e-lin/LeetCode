@@ -50,7 +50,7 @@ Now `b` is `0`, we are done, so return `a`. This algorithm works in general, not
 
 All the masks are doing is ensuring that the value is an integer.
 
-Since the maximum possible `int` (32 bits) is 2147483647(memorize it with hex `0x0FFFFFFF`). So, if you add 2 to this value, without using mask, you will just get
+Since the maximum possible `int` (32 bits) is 2147483647(memorize it with hex `0x7FFFFFFF`). So, if you add 2 to this value, without using mask, you will just get
 
 ```
 print get_sum(2147483647, 2)
